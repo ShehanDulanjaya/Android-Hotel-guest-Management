@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_4"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_700"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_name_item_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:text="Burger"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_price_item_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_item_list"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="Rs. 180"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/order_btn_item_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/ic_menu_delete"
+            android:backgroundTint="@color/white"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty : 2"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_alignTop="@+id/tv_price_item_list"
+            android:layout_toLeftOf="@+id/order_btn_item_list"
+            android:layout_toStartOf="@+id/order_btn_item_list" />
+    </RelativeLayout>
+
+</LinearLayout>

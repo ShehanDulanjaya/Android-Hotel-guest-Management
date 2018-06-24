@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainer13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bill"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#4CAF50"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Bill"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/textView2" />
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:stretchColumns="1"
+            android:background="#B3cee6e0"
+            android:id="@+id/tableLayout">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx1"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Room No"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx2"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx3"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Room Price"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx4"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx5"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Days"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx6"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx7"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Room Charge"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx8"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            //space1
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/space"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx9"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Security Service"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx10"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx11"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Laundry Service"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx12"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx13"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Room Arrangment"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx14"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx15"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Delivery Chargers"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx16"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            //space2
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/space2"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tx17"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Food Chargers"
+                    android:textColor="@color/grey_700"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tx18"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="0.0"
+                    android:textColor="@color/grey_700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txTot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Total"
+            android:textColor="@color/grey_700"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/tableLayout"
+            android:layout_alignLeft="@+id/tableLayout"
+            android:layout_alignStart="@+id/tableLayout" />
+
+        <TextView
+            android:id="@+id/txTotval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txTot"
+            android:layout_alignEnd="@+id/tableLayout"
+            android:layout_alignRight="@+id/tableLayout"
+            android:text="0.0"
+            android:textColor="@color/grey_700"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

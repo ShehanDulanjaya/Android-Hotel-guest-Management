@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teranova.foodies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name="com.teranova.foodies.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.teranova.foodies.Login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.teranova.foodies.FoodList"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.teranova.foodies.Order"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <receiver android:name="com.teranova.foodies.utilities.MyBroadcastReceiver" />
+
+        <activity android:name="com.teranova.foodies.menu" />
+        <activity android:name="com.teranova.foodies.services" />
+        <activity android:name="com.teranova.foodies.Billinfo" />
+        <activity android:name="com.teranova.foodies.Feedback" />
+        <activity android:name="com.teranova.foodies.addservice" />
+        <activity
+            android:name="com.teranova.foodies.tabMainActivity"
+            android:label="@string/title_activity_tab_main"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.teranova.foodies.Cart" />
+        <activity android:name="com.teranova.foodies.cart_list"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeContainer14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/service"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Cart"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/textView19" />
+
+            <Button
+                android:id="@+id/nothing"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:background="@drawable/cart"
+                android:elevation="0dp"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView19"
+                android:layout_toEndOf="@+id/textView19" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview4"
+            android:layout_width="match_parent"
+            android:layout_height="348dp"
+
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/totdis" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorAccent"
+            android:text="Checkout" />
+
+        <TextView
+            android:id="@+id/totdis"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/check"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

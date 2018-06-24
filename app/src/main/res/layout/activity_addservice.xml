@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainer1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/service"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Request Service"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/textView2" />
+
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Name"
+            android:textColor="@color/black"
+            android:layout_above="@+id/servName"
+            android:layout_alignLeft="@+id/servName"
+            android:layout_alignStart="@+id/servName"
+            android:layout_marginBottom="11dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Enter Service Here"
+            android:textColor="@color/black"
+            android:layout_marginTop="147dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/addserv"
+            android:layout_alignStart="@+id/addserv" />
+
+        <EditText
+            android:id="@+id/addserv"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_outine_edittext"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textMultiLine"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+
+        <Button
+            android:id="@+id/servbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/addserv"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/addserv"
+            android:layout_marginBottom="27dp"
+            android:background="@color/colorPrimary"
+            android:text="Submit" />
+
+        <EditText
+            android:id="@+id/servName"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_outine_edittext"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_above="@+id/addserv"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignRight="@+id/addserv"
+            android:layout_alignEnd="@+id/addserv"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

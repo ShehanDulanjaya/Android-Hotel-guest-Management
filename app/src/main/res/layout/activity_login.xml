@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/et_username_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rounded_outine_edittext"
+            android:gravity="center"
+            android:hint="Username"
+            android:padding="8dp"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:textColor="@color/grey_900"
+            android:textColorHint="@color/grey_600"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_outine_edittext"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/grey_900"
+            android:textColorHint="@color/grey_600"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorDarkBlue"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Teranova"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
+</RelativeLayout>
