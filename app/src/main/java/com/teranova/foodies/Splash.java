@@ -76,7 +76,7 @@ public class Splash extends AppCompatActivity {
             try {
 
                 // Enter URL address where your php file resides
-                url = new URL("http://foodie.sanila.tech/tera/login.php");
+                url = new URL("wamp server address/login.php");
             } catch (MalformedURLException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
