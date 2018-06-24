@@ -9,7 +9,7 @@ public class conurl {
     public String url(String input)
 
     {
-        String con ="http://foodie.sanila.tech/tera/"+input;
+        String con ="your server address"+input;
         return con;
     }
 
